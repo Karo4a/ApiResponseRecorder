@@ -112,7 +112,7 @@ def prepareResponseForWrite(header, response : list[dict]) -> tuple[list[list[st
     for column in header:
         columnValues = []
         for row in response:
-            item = row[column]
+            item = row.get(column, None)
             data = itemToStr(item)
             columnValues.append(data)
 
