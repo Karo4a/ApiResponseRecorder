@@ -148,7 +148,7 @@ def main():
     session = requests.Session()
     session.verify = False
     
-    requestURL = input("Enter request api url: ")
+    requestURL = input("Enter GET request api url: ")
     if not os.path.isdir(outputDirectory):
         os.makedirs(outputDirectory)
     
