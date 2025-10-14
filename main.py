@@ -135,7 +135,7 @@ def writeDataToTable(filename: str, header, values: list, widths: list) -> None:
         widths (list[int]): Ширины каждой колонки.
     """
 
-    filePath = f"{outputDirectory}\\{filename}"
+    filePath = f"{outputDirectory}/{filename}"
     with open(filePath, "w", encoding="utf-8") as file:
         file.write("|" + " ".join(head.ljust(width) for head, width  in zip(header, widths)) + "|\n")
         file.write("|" + " ".join('-' * width for width in widths) + "|\n")
