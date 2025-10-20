@@ -1,4 +1,9 @@
-import requests, datetime, os, urllib3, string
+import datetime
+import os
+import string
+
+import requests
+import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 outputDirectory = "output"
